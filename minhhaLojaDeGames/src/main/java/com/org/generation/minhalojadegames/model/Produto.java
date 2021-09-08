@@ -11,7 +11,6 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.hibernate.validator.constraints.Currency;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -43,6 +42,11 @@ public class Produto {// ID, NOME, DESCRICAO, PRECO, QTD
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("produto")
+	private Usuario usuario;
+	
 	
 	
 	
