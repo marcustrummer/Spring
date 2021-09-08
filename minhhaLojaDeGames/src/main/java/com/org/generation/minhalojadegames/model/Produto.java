@@ -36,11 +36,15 @@ public class Produto {// ID, NOME, DESCRICAO, PRECO, QTD
 	
 	@NotNull(message = "O atributo quantidade eh obrigatorio")
 	private long qtd;
+	//----------------------------RELACIONAMENTOS--------------------------------------
+	
 	
 	
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
+	
+	
 	
 
 
