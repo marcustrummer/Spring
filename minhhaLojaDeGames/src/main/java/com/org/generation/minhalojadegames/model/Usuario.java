@@ -34,8 +34,9 @@ public class Usuario {
 	private LocalDate dataNascimento;
 
 
+
 	@NotNull
-	@Size(min = 5, max = 100)
+	@Size(min=5)
 	private String usuario;
 	
 	@NotNull
